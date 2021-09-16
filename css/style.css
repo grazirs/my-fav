@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    background-color: black;
+    padding: 1rem;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.menu a {
+    text-decoration: none;
+    margin-right: 0.8rem;
+    font-size: 0.9rem;
+}
+
+.header {
+    background-image: url('../img/banner-1.jfif');
+    height: 30vh;
+    background-size: cover;
+}
+
+.texto {
+    background: #096085;
+    padding: 0.5rem;
+    font-size: 0.75rem;
+    text-align: center;
+}
+
+.autor {
+    background: #096085;
+    font-size: 0.6rem;
+    text-align: right;
+    padding: 0.5rem;
+}
+
+.livros__card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.livros__card-romances, .livros__card-classicos {
+    background: #C4C4C4;
+    width: 52%;
+    justify-content: center;
+    margin: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-radius: 0.3rem;
+}
+
+.livros__card-romances p, .livros__card-classicos p {
+    font-size: 0.75rem;
+    color: black;
+    text-align: center;
+    margin-bottom: 0.3rem;
+}
+
+.livros__card-romances .btn1, .livros__card-classicos .btn2 {
+    font-size: 0.6rem;
+    background: #096085;
+    padding: 0.3rem;
+    text-decoration: none;
+    border-radius: 0.4rem;
+    float: right;
+    margin-right: 0.4rem;
+}
+
+.livros__card-romances .btn1:hover, .livros__card-classicos .btn2:hover {
+    background: black;
+}
+
+.foto1 {
+    width: 100%;
+    border-radius: 0.3rem;
+}
+
+.foto2 {
+    width: 100%;
+    border-radius: 0.3rem;
+}
+
+.footer {
+    background: black;
+    height: 45px;
+}
+
+.footer p {
+    color: white;
+    font-size: 0.75rem;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+/*Responsividade*/
+
+/*Tablet*/
+
+@media(min-width:481px) and (max-width:991px) {
+    .header {
+        height: 45vh;
+    }
+    .texto {
+        font-size: 1.2rem;
+        padding-top: 1.8rem;
+    }
+    .autor {
+        font-size: 0.9rem;
+    }
+    .livros__card-romances {
+        margin-top: 2rem;
+    }
+    .livros__card-classicos {
+        margin-bottom: 2rem;
+    }
+    .livros__card-romances p, .livros__card-classicos p {
+        font-size: 1.2rem;
+    }
+    .livros__card-romances .btn1, .livros__card-classicos .btn2 {
+        font-size: 0.8rem;
+        padding: 0.5rem;
+        margin-right: 0.8rem;
+    }
+    .footer p {
+        font-size: 1rem;
+    }
+}
+
+/*Desktop*/
+
+@media(min-width:992px) {
+    .header {
+        height: 50vh;
+    }
+    .navbar {
+        height: 6vh;
+    }
+    .navbar h3 {
+        font-size: 1.8rem;
+    }
+    .menu a {
+        font-size: 1.4rem;
+        margin-right: 3rem;
+    }
+    .texto {
+        font-size: 2rem;
+        padding-top: 1.8rem;
+        height: 10vh;
+    }
+    .autor {
+        font-size: 1.3rem;
+    }
+    .livros__card {
+        flex-wrap: nowrap;
+        justify-content: center;
+        margin: 4rem;
+        width: 90%;
+    }
+    .livros__card-romances, .livros__card-classicos {
+        width: 30%;
+    }
+    .livros__card-romances {
+        margin-right: 3rem;
+    }
+    .livros__card-romances p, .livros__card-classicos p {
+        font-size: 1.4rem;
+        font-weight: bold;
+    }
+    .livros__card-romances .btn1, .livros__card-classicos .btn2 {
+        font-size: 1rem;
+        padding: 0.5rem;
+        margin-right: 0.8rem;
+    }
+    .footer p {
+        font-size: 0.8rem;
+    }
+}
